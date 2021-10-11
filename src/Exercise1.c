@@ -19,7 +19,22 @@ int main(int argc, char *argv[]) {
 	float distance = atof(argv[1]);
 	int result;
 	//Your codes here
-	
+	result=15000;
+	if (distance<=2)
+	{
+		result=15000;
+	}
+	else if (distance<=30&&distance>2)
+	{
+		result=(distance-2)*(1000/250)*2000+15000;
+	}
+	else if (distance>30)
+	{
+		result=(30-2)*(1000/250)*2000+15000+(distance-30)*5000;
+	}
 	printf("%d", result);
 	return 0;
 }
+//gcc .\src\Exercise3.c -o .\bin\ex3.exe
+//.\bin\\ex3.exe 24
+

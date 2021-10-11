@@ -3,7 +3,7 @@
 Ex:
 ______________________________________
 | Input: 24                          |
-| Output: 2 * 2 * 2 * 3              |
+| Output: 2* 2 * 2  * 3              |
 |____________________________________|
 */
 #include <stdio.h>
@@ -16,6 +16,32 @@ int main(int argc, char *argv[]) {
 	
 	//Your codes here
 	
-	
+	while(testcase!=1)
+	{
+		
+		for (int i=2;i<=testcase;i++)
+		{
+			int check=0;
+			if (testcase%i==0)
+			{
+				if (i!=testcase)
+			{
+			printf(" %d *",i);
+			}
+			else
+			{
+				printf(" %d",i);
+			}
+			testcase=testcase/i;
+			check=1;
+			break;
+			}
+			if(check==1)
+			{
+				break;
+			}
+			
+		}
+	}
 	return 0;
 }
