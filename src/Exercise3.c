@@ -3,7 +3,7 @@
 Ex:
 ______________________________________
 | Input: 24                          |
-| Output: 2 * 2 * 2 * 3              |
+| Output: 2* 2 * 2  * 3              |
 |____________________________________|
 */
 #include <stdio.h>
@@ -26,11 +26,11 @@ int main(int argc, char *argv[]) {
 			{
 				if (i!=testcase)
 			{
-			printf("%d*",i);
+			printf(" %d *",i);
 			}
 			else
 			{
-				printf("%d",i);
+				printf(" %d",i);
 			}
 			testcase=testcase/i;
 			check=1;

@@ -35,6 +35,6 @@ int main(int argc, char *argv[]) {
 	printf("%d", result);
 	return 0;
 }
-//gcc .\src\Exercise1.c -o .\bin\ex1.exe
-//.\bin\\ex1.exe 32.5
+//gcc .\src\Exercise3.c -o .\bin\ex3.exe
+//.\bin\\ex3.exe 24
 
